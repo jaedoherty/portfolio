@@ -3,18 +3,55 @@
   font-family: 'Rubik', sans-serif;
 }
 
+html, body, #root, .App {
+  margin: 0px;
+  height: 100%;
+}
+
+p {
+  margin-top: 0px;
+  
+}
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 #nav {
   display: flex;
   justify-content: center;
+
+  background-image: url(./images/cool-background-nav.png);
 }
 
 .nav-link {
   margin: 20px;
+}
+
+#about {
+  padding: 15px;
+  height: 90.9%;
+  /* background-image: url(./images/portbgsmall.jpg); */
+}
+
+#about-description {
+  max-width: 30%;
+  margin: 0px 20px;
+}
+
+#about-bio {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#projects {
+  padding: 15px;
+}
+
+#self-img {
+  height: 420px;
+  width: 300px;
 }
 
 

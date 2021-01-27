@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <div id="nav">
-      <div className="nav-link">About</div>
-      <div className="nav-link">Projects</div>
+      <Link to="/">
+        <div className="nav-link">About</div>
+      </Link>
+      <Link to="/projects">
+        <div className="nav-link">Projects</div>
+      </Link>
       <a className="nav-link" href="https://github.com/jaedoherty">
         <div>GitHub</div>
       </a>
