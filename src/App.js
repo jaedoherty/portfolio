@@ -1,10 +1,16 @@
 import './App.css';
 import About from './components/about'
+import Nav from './components/nav'
+import {Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <About/>
+      <Nav />
+      <Switch>
+        <Route path="/" component={About}/>
+      </Switch>
+
     </div>
   );
 }
