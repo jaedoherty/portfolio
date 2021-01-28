@@ -3,11 +3,9 @@ import React from 'react';
 const About = () => {
     return (
       <div id="about">
-        {/* <img id="header-img"src="triangles.jpg"/> */}
         <h1 id="about-header">About Me</h1>
         <div id="about-bio">
             <div id="about-description">
-
                 <div id="p1">
                     I may not have started in design but I am proud to call myself a
                     Software Engineer with a passion for the frontend. From React/Redux
@@ -28,6 +26,9 @@ const About = () => {
             </div>
             <div id="about-img">
                 <img id="self-img" src="jae_doherty.jpg"/>
+                <div>Jae Doherty</div>
+                <div>Software Engineer</div>
+                <button id="about-button">View Resume</button>
             </div>
         </div>
       </div>
