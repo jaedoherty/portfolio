@@ -9,7 +9,15 @@ html, body, #root, .App {
 }
 
 body {
-  background-image: url(./images/triangles.jpg);
+  background-image: url(./images/trianglify.png);
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 p {
