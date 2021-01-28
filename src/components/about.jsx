@@ -3,11 +3,12 @@ import React from 'react';
 const About = () => {
     return (
       <div id="about">
+        {/* <img id="header-img"src="triangles.jpg"/> */}
         <h1 id="about-header">About Me</h1>
         <div id="about-bio">
             <div id="about-description">
 
-                <p>
+                <div id="p1">
                     I may not have started in design but I am proud to call myself a
                     Software Engineer with a passion for the frontend. From React/Redux
                     to Javascript, if I can style it I am all about it. I love learning
@@ -18,12 +19,12 @@ const About = () => {
                     was a full-stack rendition of OkCupid that I call Matchstick; which
                     allowed me to show off my creative skills while still flexing my
                     backend knowledge in Ruby on Rails.
-                </p>
-                <p>
+                </div>
+                <div id="p1">
                     In my off time, I make a mean chicken katsu sandwich and play piano
                     and hone my skills as the go-to makeup artist for my friends; not at
                     the same time, of course!
-                </p>
+                </div>
             </div>
             <div id="about-img">
                 <img id="self-img" src="jae_doherty.jpg"/>
