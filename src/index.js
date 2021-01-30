@@ -1,14 +1,69 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {HashRouter} from 'react-router-dom'
+import {HashRouter, Link} from 'react-router-dom'
+import Fade from './components/fade.jsx'
+import Nav from "./components/nav";
 // import reportWebVitals from './reportWebVitals';
 
+const Site = () => {
+  const [show, setShow] = useState(true);
+  const handleClick = () => {
+   setShow((show) => show)
+  // setShow((show) => {
+  //   return {
+  //     // ...prevState,
+  //     show: false,
+  //   };
+  // });
+  // setShow((show) => {
+  //   return {
+  //     // ...prevState,
+  //     show: true,
+  //   };
+  // });
+
+  }
+
+  // const reappear = () => {
+  //     setTimeout(
+  //       setShow((show) => show),
+  //       1000
+  //     ); 
+  // }
+         
+  
+  return (
+    <div>
+      <div id="nav">
+        <Link to="/" onClick={handleClick}>
+          <div className="nav-link">About</div>
+        </Link>
+        <Link to="/projects" onClick={handleClick}>
+          <div className="nav-link">Projects</div>
+        </Link>
+        <a className="nav-link" href="https://github.com/jaedoherty">
+          <div>GitHub</div>
+        </a>
+        <a className="nav-link" href="https://www.linkedin.com/in/jae-doherty/">
+          <div>LinkedIn</div>
+        </a>
+        <a className="nav-link" href="https://angel.co/u/jae-doherty">
+          <div>AngelList</div>
+        </a>
+      </div>
+
+      <Fade show={show}>
+        <App />
+      </Fade>
+    </div>
+  );
+};
 
 ReactDOM.render(
   <HashRouter>
-    <App />
+    <Site />
   </HashRouter>,
   document.getElementById('root')
 );
