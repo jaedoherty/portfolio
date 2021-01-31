@@ -1,18 +1,20 @@
-import './App.css';
-import About from './components/about'
+import "./App.css";
+import React from 'react';
+import { Switch, Route } from "react-router-dom";
 
-import Projects from './components/projects'
-import {Switch, Route} from 'react-router-dom'
+import Nav from "./components/nav";
+import About from "./components/about";
+import Projects from "./components/projects";
 
 function App() {
+
   return (
     <div className="App">
- 
+      <Nav />
       <Switch>
         <Route path="/projects" component={Projects} />
-        <Route path="/" component={About}/>
+        <Route path="/" component={About} />
       </Switch>
-
     </div>
   );
 }
