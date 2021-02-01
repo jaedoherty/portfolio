@@ -10,13 +10,28 @@ const Nav = () => {
       <Link to="/projects">
         <div className="nav-link">Projects</div>
       </Link>
-      <a className="nav-link" href="https://github.com/jaedoherty">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-link"
+        href="https://github.com/jaedoherty"
+      >
         <div>GitHub</div>
       </a>
-      <a className="nav-link" href="https://www.linkedin.com/in/jae-doherty/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-link"
+        href="https://www.linkedin.com/in/jae-doherty/"
+      >
         <div>LinkedIn</div>
       </a>
-      <a className="nav-link" href="https://angel.co/u/jae-doherty">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-link"
+        href="https://angel.co/u/jae-doherty"
+      >
         <div>AngelList</div>
       </a>
     </div>

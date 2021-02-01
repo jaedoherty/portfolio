@@ -1,6 +1,7 @@
 
 * {
   font-family: 'Rubik', sans-serif;
+  /* height: 100%; */
 }
 
 html, body, #root, .App {
@@ -105,17 +106,51 @@ h1 {
   width: 200px;
   border: white solid 3px;
   border-radius: 50%;
-  /* box-shadow: 5px 5px 2px	rgb(231, 227, 214); */
 }
 
 #p1 {
   margin: 10px;
 }
 
-.project-container {
-  height: 70%;
-  width: 27%;
+#project-container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
 }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  margin: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(147,176,174);
+  border-radius: 8px; */
+}
+
+.project-img {
+  /* height: 35%; */
+  width: 90%;
+  height: 35%;
+  margin: 20px 0px;
+}
+
+.project-header {
+  color:rgb(65,142,151);
+}
+
+.project-bio {
+  color: rgb(65,143,155);
+  margin: 20px 0px;
+  width: 90%;
+  height: 10%;
+}
+
 
 @keyframes fadeIn {
   0% {

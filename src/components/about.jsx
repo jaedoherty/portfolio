@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import { Trail } from "react-spring/renderprops";
 
 const About = () => {
     const props = useSpring({
