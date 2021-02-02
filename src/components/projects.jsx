@@ -30,8 +30,8 @@ const PROJECTS = [
 ];
 const Projects = () => {
   const trail = useTrail(PROJECTS.length, {
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+    from: { opacity: 0, mass: 0 },
+    to: { opacity: 1, mass: 1 },
   });
 
   console.log("trail", trail);

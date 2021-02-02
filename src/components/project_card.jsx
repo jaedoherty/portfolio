@@ -14,7 +14,7 @@ const ProjectCard = (project) => {
         <div className="project">
           <h3 className="project-header">{project.project.name}</h3>
           <div className="project-bio">{project.project.bio}</div>
-          <img className="project-img" src={project.project.url} />
+          <img className="project-img" src={project.project.url} alt=""/>
           <a
             className="project-link"
             target="_blank"

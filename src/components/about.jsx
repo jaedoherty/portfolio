@@ -13,7 +13,7 @@ const About = () => {
 
       <div id="about-bio">
         <div id="about-img">
-          <img id="self-img" src="jae_doherty.jpg" />
+          <img id="self-img" src="jae_doherty.jpg" alt="self-img" />
           <div>Jae Doherty</div>
           <div>Software Engineer</div>
           {/* <button id="about-button">View Resume</button> */}
@@ -43,3 +43,5 @@ const About = () => {
 };
 
 export default About;
+
+// public/jae_doherty.jpg
