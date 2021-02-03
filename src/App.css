@@ -1,7 +1,7 @@
 
 * {
   font-family: 'Rubik', sans-serif;
-  /* height: 100%; */
+
 }
 
 html, body, #root, .App {
@@ -13,13 +13,7 @@ body {
   background-image: url(./images/mountains.jpg);
 }
 
-/* .background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-} */
+
 
 p {
   margin-top: 0px; 
@@ -38,7 +32,6 @@ a {
 
 .nav-link {
   margin: 20px;
-  /* color:rgb(61,136,149); */
    color:rgb(117,168,171);
   font-weight: bold;
 }
@@ -67,7 +60,7 @@ h1 {
   margin: 0px 20px;
   border-radius: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #about-bio {
@@ -80,8 +73,6 @@ h1 {
 #about-img {
   
   display: grid;
-  /* flex-direction: column; */
-  /* align-items: center; */
   justify-items: center;
   row-gap: 15px;
   padding: 10px;
@@ -93,7 +84,10 @@ h1 {
   outline: none;
   height: 40px;
   width: 140px;
+  color: rgb(35,90,111);
+  background-color: rgb(246,194,157);
 }
+
 
 #projects {
   padding: 15px;

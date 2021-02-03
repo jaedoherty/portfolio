@@ -1,14 +1,9 @@
 import React from "react";
-import { useTrail, animated } from "react-spring";
+// import { useTrail} from "react-spring";
 
 
 const ProjectCard = (project) => {
-    // project = Object.values(project)
-    console.log(project)
-      const trail = useTrail(project.length, {
-        from: { opacity: 0 },
-        to: { opacity: 1 },
-      });
+
     return (
 
         <div className="project">

@@ -1,6 +1,5 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import { Trail } from "react-spring/renderprops";
 
 const About = () => {
     const props = useSpring({
@@ -8,15 +7,15 @@ const About = () => {
       from: { opacity: 0 },
     });
   return (
-    <animated.div id="about" style={props}>
+    <div id="about">
       <h1 id="about-header">About Me</h1>
 
-      <div id="about-bio">
+      <animated.div id="about-bio" style={props}>
         <div id="about-img">
           <img id="self-img" src="jae_doherty.jpg" alt="self-img" />
           <div>Jae Doherty</div>
           <div>Software Engineer</div>
-          {/* <button id="about-button">View Resume</button> */}
+          <button id="about-button">View Resume</button>
         </div>
         <div id="about-description">
           <div id="p1">
@@ -32,16 +31,15 @@ const About = () => {
             backend knowledge in Ruby on Rails.
           </div>
           <div id="p1">
-            In my off time, I make a mean chicken katsu sandwich and play piano
+            In my off time, I make a mean chicken katsu sandwich, play piano,
             and hone my skills as the go-to makeup artist for my friends; not at
             the same time, of course!
           </div>
         </div>
-      </div>
-    </animated.div>
+      </animated.div>
+    </div>
   );
 };
 
 export default About;
 
-// public/jae_doherty.jpg

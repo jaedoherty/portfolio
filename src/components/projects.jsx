@@ -34,7 +34,6 @@ const Projects = () => {
     to: { opacity: 1, mass: 1 },
   });
 
-  console.log("trail", trail);
   // returns an array of animated values which you can iterate over
   return (
     <div id="projects">
