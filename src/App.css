@@ -102,8 +102,8 @@ h1 {
 }
 
 #self-img {
-  height: 200px;
-  width: 200px;
+  /* height: 200px;
+  width: 200px; */
   border: white solid 3px;
   border-radius: 50%;
   /* background-image: url('jae_doherty.jpg'); */
