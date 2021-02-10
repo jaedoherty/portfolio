@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import PDF from './resume.pdf'
 
 const About = () => {
     const props = useSpring({
@@ -15,7 +16,12 @@ const About = () => {
           <img id="self-img" src="jae_doherty.jpg" alt="self-img" />
           <div>Jae Doherty</div>
           <div>Software Engineer</div>
-          <button id="about-button">View Resume</button>
+          <a
+            target="_blank"
+            href={PDF}
+          >
+            <button id="about-button">View Resume</button>
+          </a>
         </div>
         <div id="about-description">
           <div id="p1">

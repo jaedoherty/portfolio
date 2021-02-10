@@ -82,10 +82,17 @@ h1 {
 #about-button { 
   border: none;
   outline: none;
+  border-radius: 18px;
   height: 40px;
   width: 140px;
   color: rgb(35,90,111);
   background-color: rgb(246,194,157);
+  font-weight: bold;
+}
+
+#about-button:hover {
+  background-color: rgb(244,179,119);
+  cursor: pointer;
 }
 
 
@@ -96,11 +103,8 @@ h1 {
 }
 
 #self-img {
-  /* height: 200px;
-  width: 200px; */
   border: white solid 3px;
   border-radius: 50%;
-  /* background-image: url('jae_doherty.jpg'); */
 }
 
 #p1 {

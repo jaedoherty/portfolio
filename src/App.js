@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      {/* <Home /> */}
       <Switch>
         <Route path="/projects" component={Projects} />
         <Route path="/" component={About} />
