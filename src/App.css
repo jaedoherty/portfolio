@@ -132,6 +132,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px 10px;
   /* background-color: rgb(147,176,174);
   border-radius: 8px; */
 }
