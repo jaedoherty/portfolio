@@ -123,11 +123,14 @@ h1 {
 }
 .project-container {
   width: 40%;
+  /* display: flex;
+  flex-direction: column; */
 }
 .project {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* background-color: rgb(147,176,174);
   border-radius: 8px; */
